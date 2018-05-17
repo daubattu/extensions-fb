@@ -1,16 +1,19 @@
-async function getCookies() {
-  let listCookies = await chrome.cookies.getAll({}, function (cookies) {
-    let allCookieInfo = "";
-    for (i = 0; i < cookie.length; i++) {
-      allCookieInfo = allCookieInfo + JSON.stringify(cookie[i]);
-    }
-    return allCookieInfo
-  })
-}
+// function printCookies(msg) {
+//   return function() {
+//     console.log(msg);
+//     chrome.cookies.getAll({}, cookies => console.log(JSON.stringify(cookies)));
+//   }
+// }
 
-console.log(chrome.cookies)
+// var callback = function() {
+//   setTimeout(printCookies("from callback:"), 10000);  
+// };
+
+// chrome.tabs.executeScript(null, {file: 'login.js'}, callback);
+
+// setTimeout(printCookies("not from callback:"), 10000);
 
 chrome.runtime.sendMessage({
   action: "getCookieFB",
-  source: "getCookies()"
+  source: "1234"
 });
