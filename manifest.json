@@ -1,8 +1,8 @@
 {
-  "name": "Get cookie, fb_dtsg Facebook - STO",
+  "name": "Get cookie, body data, acccess_token FB - BIG4.VN",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Extension get cookie, fb_dtsg Facebook.",
+  "description": "Extension get cookie, body data, acccess_token FB.",
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
