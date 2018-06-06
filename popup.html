@@ -1,9 +1,44 @@
 <!DOCTYPE html>
-<html style=''>
+<html>
+
 <head>
-<script src='popup.js'></script>
+  <script src='popup.js'></script>
+  <style>
+    tr td:nth-child(1), tr td:nth-child(1) {
+      display: block;
+      width: 100px;
+    }
+  </style>
 </head>
-<body style="width:400px;">
-<div id='message'>Injecting Script....</div>
+
+<body style="min-width: 400px;">
+  <table>
+    <tr>
+      <th>Name</th>
+      <th style="text-align: left">Value</th>
+    </tr>
+
+    <tr>
+      <td>Cookie</td>
+      <td>
+        <div id="cookie">
+          Loading...
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Body</td>
+      <td>
+        <div id='message'>Loading...</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Access token</td>
+      <td>
+        <div id='access_token'>Loading...</div>
+      </td>
+    </tr>
+  </table>
 </body>
+
 </html>
